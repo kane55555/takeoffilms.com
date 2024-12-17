@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Song</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #111;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        h2 {
+            margin-bottom: 1rem;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+        }
+        button {
+            background-color: #444;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h2>Submit Your Song</h2>
+    <form action="mailto:submissions@takeoffilms.com" method="post" enctype="text/plain">
+        <input type="text" name="artist_name" placeholder="Artist Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="instagram_name" placeholder="Instagram Name" required>
+        <input type="text" name="budget" placeholder="Budget" required>
+        <input type="date" name="shoot_date" required>
+        <input type="file" name="song" accept="audio/*" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
